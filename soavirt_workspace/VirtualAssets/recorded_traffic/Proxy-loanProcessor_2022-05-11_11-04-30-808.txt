@@ -1,0 +1,142 @@
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary=fgEolMxX4eUDTp7joz8cDzym9oQUBB
+Traffic-Format-Version: 1
+Protocol-Id: http-v1
+
+--fgEolMxX4eUDTp7joz8cDzym9oQUBB
+Content-Type: text/plain; charset=UTF-8
+Dest-Address: localhost:8080
+Secure: false
+Source-Address: 127.0.0.1:52025
+Timestamp: 1652281497842
+
+POST /proxy-loanProcessor HTTP/1.1
+content-type: text/xml; charset=UTF-8
+accept: */*
+soapaction: ""
+user-agent: Apache-CXF/3.4.5
+cache-control: no-cache
+pragma: no-cache
+host: localhost:9080
+connection: keep-alive
+content-length: 406
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:requestLoan xmlns:ns2="http://service.parabank.parasoft.com/"><ns2:loanRequest><requestDate>2022-05-11T15:04:57.814Z</requestDate><customerId>12434</customerId><availableFunds>425.50</availableFunds><loanAmount>100</loanAmount><downPayment>10</downPayment></ns2:loanRequest></ns2:requestLoan></soap:Body></soap:Envelope>
+--fgEolMxX4eUDTp7joz8cDzym9oQUBB
+Content-Type: text/plain; charset=UTF-8
+Dest-Address: 127.0.0.1:52025
+Secure: false
+Source-Address: localhost:8080
+Timestamp: 1652281497847
+
+HTTP/1.1 200 
+Content-Type: text/xml;charset=UTF-8
+Content-Length: 400
+Date: Wed, 11 May 2022 15:04:57 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:requestLoanResponse xmlns:ns2="http://service.parabank.parasoft.com/"><ns2:loanResponse><responseDate>2022-05-11T15:04:57.845Z</responseDate><loanProviderName>Wealth Securities Dynamic Loans (WSDL)</loanProviderName><approved>true</approved></ns2:loanResponse></ns2:requestLoanResponse></soap:Body></soap:Envelope>
+--fgEolMxX4eUDTp7joz8cDzym9oQUBB
+Content-Type: text/plain; charset=UTF-8
+Dest-Address: localhost:8080
+Secure: false
+Source-Address: 127.0.0.1:52030
+Timestamp: 1652281505065
+
+POST /proxy-loanProcessor HTTP/1.1
+content-type: text/xml; charset=UTF-8
+accept: */*
+soapaction: ""
+user-agent: Apache-CXF/3.4.5
+cache-control: no-cache
+pragma: no-cache
+host: localhost:9080
+connection: keep-alive
+content-length: 407
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:requestLoan xmlns:ns2="http://service.parabank.parasoft.com/"><ns2:loanRequest><requestDate>2022-05-11T15:05:05.006Z</requestDate><customerId>12434</customerId><availableFunds>425.50</availableFunds><loanAmount>400</loanAmount><downPayment>100</downPayment></ns2:loanRequest></ns2:requestLoan></soap:Body></soap:Envelope>
+--fgEolMxX4eUDTp7joz8cDzym9oQUBB
+Content-Type: text/plain; charset=UTF-8
+Dest-Address: 127.0.0.1:52030
+Secure: false
+Source-Address: localhost:8080
+Timestamp: 1652281505070
+
+HTTP/1.1 200 
+Content-Type: text/xml;charset=UTF-8
+Content-Length: 400
+Date: Wed, 11 May 2022 15:05:05 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:requestLoanResponse xmlns:ns2="http://service.parabank.parasoft.com/"><ns2:loanResponse><responseDate>2022-05-11T15:05:05.068Z</responseDate><loanProviderName>Wealth Securities Dynamic Loans (WSDL)</loanProviderName><approved>true</approved></ns2:loanResponse></ns2:requestLoanResponse></soap:Body></soap:Envelope>
+--fgEolMxX4eUDTp7joz8cDzym9oQUBB
+Content-Type: text/plain; charset=UTF-8
+Dest-Address: localhost:8080
+Secure: false
+Source-Address: 127.0.0.1:52033
+Timestamp: 1652281510485
+
+POST /proxy-loanProcessor HTTP/1.1
+content-type: text/xml; charset=UTF-8
+accept: */*
+soapaction: ""
+user-agent: Apache-CXF/3.4.5
+cache-control: no-cache
+pragma: no-cache
+host: localhost:9080
+connection: keep-alive
+content-length: 409
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:requestLoan xmlns:ns2="http://service.parabank.parasoft.com/"><ns2:loanRequest><requestDate>2022-05-11T15:05:10.456Z</requestDate><customerId>12434</customerId><availableFunds>425.50</availableFunds><loanAmount>30000</loanAmount><downPayment>200</downPayment></ns2:loanRequest></ns2:requestLoan></soap:Body></soap:Envelope>
+--fgEolMxX4eUDTp7joz8cDzym9oQUBB
+Content-Type: text/plain; charset=UTF-8
+Dest-Address: 127.0.0.1:52033
+Secure: false
+Source-Address: localhost:8080
+Timestamp: 1652281510489
+
+HTTP/1.1 200 
+Content-Type: text/xml;charset=UTF-8
+Content-Length: 444
+Date: Wed, 11 May 2022 15:05:10 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:requestLoanResponse xmlns:ns2="http://service.parabank.parasoft.com/"><ns2:loanResponse><responseDate>2022-05-11T15:05:10.488Z</responseDate><loanProviderName>Wealth Securities Dynamic Loans (WSDL)</loanProviderName><approved>false</approved><message>error.insufficient.funds</message></ns2:loanResponse></ns2:requestLoanResponse></soap:Body></soap:Envelope>
+--fgEolMxX4eUDTp7joz8cDzym9oQUBB
+Content-Type: text/plain; charset=UTF-8
+Dest-Address: localhost:8080
+Secure: false
+Source-Address: 127.0.0.1:52037
+Timestamp: 1652281518762
+
+POST /proxy-loanProcessor HTTP/1.1
+content-type: text/xml; charset=UTF-8
+accept: */*
+soapaction: ""
+user-agent: Apache-CXF/3.4.5
+cache-control: no-cache
+pragma: no-cache
+host: localhost:9080
+connection: keep-alive
+content-length: 408
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:requestLoan xmlns:ns2="http://service.parabank.parasoft.com/"><ns2:loanRequest><requestDate>2022-05-11T15:05:18.702Z</requestDate><customerId>12434</customerId><availableFunds>425.50</availableFunds><loanAmount>1000</loanAmount><downPayment>200</downPayment></ns2:loanRequest></ns2:requestLoan></soap:Body></soap:Envelope>
+--fgEolMxX4eUDTp7joz8cDzym9oQUBB
+Content-Type: text/plain; charset=UTF-8
+Dest-Address: 127.0.0.1:52037
+Secure: false
+Source-Address: localhost:8080
+Timestamp: 1652281518767
+
+HTTP/1.1 200 
+Content-Type: text/xml;charset=UTF-8
+Content-Length: 400
+Date: Wed, 11 May 2022 15:05:18 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:requestLoanResponse xmlns:ns2="http://service.parabank.parasoft.com/"><ns2:loanResponse><responseDate>2022-05-11T15:05:18.765Z</responseDate><loanProviderName>Wealth Securities Dynamic Loans (WSDL)</loanProviderName><approved>true</approved></ns2:loanResponse></ns2:requestLoanResponse></soap:Body></soap:Envelope>
+--fgEolMxX4eUDTp7joz8cDzym9oQUBB--

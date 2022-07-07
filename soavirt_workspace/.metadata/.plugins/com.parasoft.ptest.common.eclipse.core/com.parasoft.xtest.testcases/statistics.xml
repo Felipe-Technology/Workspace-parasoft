@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestsRun>
+   <Project err="0" fail="0" name="ParaBank" skip="0" success="0" total="0"/>
+   <Project err="0" fail="0" name="ProvisioningAssets" skip="0" success="0" total="0"/>
+   <Project err="0" fail="0" name="Servers" skip="0" success="0" total="0"/>
+   <Project err="0" fail="0" name="TestAssets" skip="0" success="2" total="13">
+      <TestCase id="wk:///TestAssets/Pokémon-API.tst#0000000000#0000000002" success="true"/>
+      <TestCase id="wk:///TestAssets/Pokémon-API.tst#0000000000#0000000010" success="true"/>
+   </Project>
+   <Project err="0" fail="0" name="VirtualAssets" skip="0" success="0" total="10"/>
+</TestsRun>
