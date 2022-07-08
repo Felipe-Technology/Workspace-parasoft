@@ -1,2 +1,0 @@
-INDEX VERSION 1.4+C:\Users\Felipe Troncoso\Documents\GitHub\Workspace-parasoft\soavirt_workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2972069684.index
